@@ -1,6 +1,6 @@
 import pygame
 from sys import exit as sys_exit
-from sceneMNGR import SceneManager
+#from sceneMNGR import SceneManager
 
 class Game:
 	def __init__(self):
@@ -9,7 +9,7 @@ class Game:
 		self.screen = pygame.display.set_mode((800,800))
 		self.clock = pygame.time.Clock()
 		self.FPS_limit = 120
-		self.SM = SceneManager()
+		#self.SM = SceneManager()
 
 	def run(self):
 		while True:
@@ -20,7 +20,7 @@ class Game:
 
 
 			dt = self.clock.tick(self.FPS_limit)/1000
-			self.SM.run(dt)
+			#self.SM.run(dt)
 			pygame.display.update()
 
 if __name__ == "__main__":
